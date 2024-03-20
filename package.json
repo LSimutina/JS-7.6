@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "cypress": "cypress open",
+    "cy:laptop:headless": "npx cypress run -b chrome -C cypress.config.js",
+    "cy:laptop:headed": "npx cypress run -b electron --headed -C cypress.config.js",
+    "cy:mobile:headless": "npx cypress run -b electron -C cypress_2.config.js",
+    "cy:mobile:headed": "npx cypress run -b chrome --headed -C cypress_2.config.js"
   },
   "keywords": [],
   "author": "",

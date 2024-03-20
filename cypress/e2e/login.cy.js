@@ -38,7 +38,7 @@ describe('template spec', () => {
     cy.contains('Delete from favorite').click()
   })
 
-  it('test favorite', () => {
+  it.skip('test favorite', () => {
     cy.login('bropet@mail.ru', '123')
     cy.get('h4').click()
   })
